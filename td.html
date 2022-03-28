@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, th, td {
+  border: 1px solid;
+}
+  .tablE{
+    border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="tablE">
+  <table style="width: 100%;height: 100%;">
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Number</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>IKX</td>
+      <td>fr2132</td>
+      <td id="Val">021371274</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+    </tr>    <tr>
+      <td>YTZ</td>
+      <td>fr4253</td>
+      <td>021371273</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>   
+     <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr>      <tr>
+      <td>NTR</td>
+      <td>fr7632</td>
+      <td>02137542</td>
+      <td><button class="btn" onclick="myfunc(event)">Copy Number</button></td>
+
+    </tr> 
+  </table>
+</div>
+<script>
+  function myfunc(data) {
+    console.log(data);
+      let a = data.srcElement.parentNode.parentNode.cells[2].innerHTML
+      navigator.clipboard.writeText(a);
+     let tagVal=document.getElementsByTagName('button')
+     for (let i = 0; i < tagVal.length; i++) {
+       tagVal[i].innerText="Copy Number"
+     }
+       data.srcElement.innerHTML="Copied"
+    }
+</script>
+</body>
+</html>

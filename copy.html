@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+<div class="shorturl">34534</div>
+<div class="shorturl">345</div>
+<div class="shorturl">gRxt34534op</div>
+<div class="shorturl">32534</div>
+<div class="shorturl">gRwqrewxtop</div>
+<div class="shorturl">ad</div>
+<div class="shorturl">gRxtop</div>
+<div class="shorturl">gRxtop</div>
+<a id="myAnchor" href="dom_obj_attributes.asp" target="_blank"></a>.
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="tool__tip">Copy to clipboard</span>
+  Copy text
+  </button>
+</div>
+
+<script>
+function myFunction() {
+
+  let element1=document.getElementsByClassName('shorturl');
+  
+  console.log("value",element1[0].innerText);
+
+  let shortUrl = myAnchor.getAttribute("href");
+  console.log(shortUrl);
+  navigator.clipboard.writeText(shortUrl);
+  var tooltip = document.getElementById("tool__tip");
+  tooltip.innerHTML = "Copied";
+
+
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("tool__tip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+</body>
+</html>
